@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricky J. Mathews - Research Portfolio</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #e2e8f0;
+            --text-muted: #94a3b8;
+            --border: #334155;
+            --accent-quantum: #8b5cf6;
+            --accent-grid: #22c55e;
+            --accent-fusion: #f97316;
+            --accent-patent: #ef4444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .contact {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .contact a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .section-title::before {
+            content: '';
+            display: block;
+            width: 4px;
+            height: 1.5rem;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 0;
+            transition: transform 0.2s, box-shadow 0.2s;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-thumbnail {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: var(--bg);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .card-icon.quantum { background: rgba(139, 92, 246, 0.2); }
+        .card-icon.grid { background: rgba(34, 197, 94, 0.2); }
+        .card-icon.fusion { background: rgba(249, 115, 22, 0.2); }
+        .card-icon.patent { background: rgba(239, 68, 68, 0.2); }
+        .card-icon.math { background: rgba(37, 99, 235, 0.2); }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .card-meta {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .card-description {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .tag {
+            background: rgba(37, 99, 235, 0.15);
+            color: #60a5fa;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .tag.quantum { background: rgba(139, 92, 246, 0.15); color: #a78bfa; }
+        .tag.grid { background: rgba(34, 197, 94, 0.15); color: #4ade80; }
+        .tag.fusion { background: rgba(249, 115, 22, 0.15); color: #fb923c; }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--primary);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background: var(--primary-dark);
+        }
+
+        .btn svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid var(--border);
+            margin-top: 2rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .stats {
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ricky J. Mathews</h1>
+            <p class="subtitle">Research Portfolio: Predictive Diagnostics for Critical Systems</p>
+            <p style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.95rem;">Geometric Algebra, Quantum Computing & Applied Mathematics</p>
+            <p class="contact">
+                <a href="mailto:mail.rjmathews@gmail.com">mail.rjmathews@gmail.com</a> |
+                ORCID: <a href="https://orcid.org/0009-0003-8975-1352" target="_blank">0009-0003-8975-1352</a>
+            </p>
+
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-value">2</div>
+                    <div class="stat-label">Provisional Patents</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">5</div>
+                    <div class="stat-label">Technical Papers</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">4</div>
+                    <div class="stat-label">Application Domains</div>
+                </div>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">Provisional Patents</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="images/BCH_Provisional_Patent_thumbnail.png" alt="BCH Provisional Patent" class="card-thumbnail" loading="lazy">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-icon patent">📜</div>
+                            <div>
+                                <h3 class="card-title">Hybrid Adaptive BCH Solver</h3>
+                                <p class="card-meta">Materials Science / Quantum Computing</p>
+                            </div>
+                        </div>
+                        <p class="card-description">
+                            Hybrid adaptive Baker-Campbell-Hausdorff solver using kinematic curvature diagnostic for finite-deformation crystal plasticity. Achieves hierarchical FE² speedup with zero false negatives through geometric proof of curvature connection and universal scaling law. Enables predictive diagnostics in materials modeling with multi-purpose diagnostic capabilities.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Materials Science</span>
+                            <span class="tag">Quantum Computing</span>
+                            <span class="tag">Geometric Algebra</span>
+                        </div>
+                        <a href="patents/BCH_Provisional_Patent.pdf" class="btn" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            View PDF
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Umbrella_Provisional_Patent_thumbnail.png" alt="Umbrella Provisional Patent" class="card-thumbnail" loading="lazy">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-icon patent">📜</div>
+                            <div>
+                                <h3 class="card-title">Predictive Diagnostics Framework</h3>
+                                <p class="card-meta">Multi-Domain / Critical Systems</p>
+                            </div>
+                        </div>
+                        <p class="card-description">
+                            Comprehensive framework for predictive diagnostics using non-commutativity of dynamical generators. Representation-agnostic method applicable across quantum error correction, robotics pose/sensor fault prediction, seismic stress-regime detection, and adaptive mesh refinement in CFD. Provides first-principles, computationally efficient predictive alarms with sufficient lead time for pre-emptive action in critical systems.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Multi-Domain</span>
+                            <span class="tag">Predictive Diagnostics</span>
+                            <span class="tag">Geometric Algebra</span>
+                        </div>
+                        <a href="patents/Umbrella_Provisional_Patent.pdf" class="btn" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            View PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Research Papers</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="images/Quantum_Dynamics_Spectral_Curvature_thumbnail.png" alt="Quantum Dynamics Spectral Curvature" class="card-thumbnail" loading="lazy">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-icon quantum">⚛️</div>
+                            <div>
+                                <h3 class="card-title">Predictive Geometric Control of Quantum Dynamics</h3>
+                                <p class="card-meta">Quantum Control / Error Prevention</p>
+                            </div>
+                        </div>
+                        <p class="card-description">
+                            Predictive geometric control framework preventing non-adiabatic transitions and leakage in electrically controlled qubits. Introduces spectral curvature functional Λ(t) = ∥[B(t), Ḃ(t)]∥ that provides pointwise control law: minimizing peak curvature at avoided crossings exponentially suppresses leakage. Enables predictive feedback control without requiring counter-diabatic fields or full Hamiltonian inversion.
+                        </p>
+                        <div class="tags">
+                            <span class="tag quantum">Quantum Control</span>
+                            <span class="tag">Predictive Diagnostics</span>
+                            <span class="tag">Spectral Methods</span>
+                        </div>
+                        <a href="papers/Quantum_Dynamics_Spectral_Curvature.pdf" class="btn" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            View PDF
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Clifford_Fact_Table_thumbnail.png" alt="Clifford Fact Tables" class="card-thumbnail" loading="lazy">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-icon math">📐</div>
+                            <div>
+                                <h3 class="card-title">Clifford Fact Tables: Quantum-State-Aware Schema</h3>
+                                <p class="card-meta">Data Architecture / Mathematics</p>
+                            </div>
+                        </div>
+                        <p class="card-description">
+                            Quantum-state-aware schema for multidimensional data analysis using Clifford algebra as foundational data architecture. Proposes multivector fact tables where algebraic structure serves as schema, enabling geometry-aware data systems. Introduces Lie-Jordan decomposition for separating incompatibility from alignment, with applications to spatial data systems and quantum data representations.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Data Architecture</span>
+                            <span class="tag">Clifford Algebra</span>
+                            <span class="tag">Quantum Computing</span>
+                        </div>
+                        <a href="papers/Clifford_Fact_Table.pdf" class="btn" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            View PDF
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Lambda_F_Functional_thumbnail.png" alt="Lambda-F Functional" class="card-thumbnail" loading="lazy">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-icon quantum">λ</div>
+                            <div>
+                                <h3 class="card-title">Lambda-F: Market Regime Detection</h3>
+                                <p class="card-meta">Financial Markets / Predictive Analytics</p>
+                            </div>
+                        </div>
+                        <p class="card-description">
+                            Two-signal framework for market regime detection combining commutator-based rotation detection with correlation synchronization. Detects institutional repositioning preceding major market transitions through non-commutativity analysis of factor covariance dynamics. Achieves 100% detection rate across 33 major market events (2000-2024) with 14-90 day lead times. Extended with game-theoretic layer incorporating Von Neumann-Nash equilibrium concepts.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Financial Markets</span>
+                            <span class="tag">Predictive Analytics</span>
+                            <span class="tag">Spectral Analysis</span>
+                        </div>
+                        <a href="papers/Lambda_F_Functional.pdf" class="btn" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            View PDF
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Power_Grid_Lambda_G_thumbnail.png" alt="Power Grid Lambda-G" class="card-thumbnail" loading="lazy">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-icon grid">⚡</div>
+                            <div>
+                                <h3 class="card-title">Predictive Grid Stress Diagnostics</h3>
+                                <p class="card-meta">Critical Infrastructure / Power Systems</p>
+                            </div>
+                        </div>
+                        <p class="card-description">
+                            Predictive grid stress diagnostics via non-commutativity of power flow Jacobians. Two-channel architecture detects localized stress pockets (60%+ sensitivity advantage over global metrics) and topology discontinuities with 13.8s lead time before cascade collapse. Distinguishes stress localization from margin preservation, enabling targeted emergency response and preventive maintenance to prevent blackouts.
+                        </p>
+                        <div class="tags">
+                            <span class="tag grid">Critical Infrastructure</span>
+                            <span class="tag">Power Systems</span>
+                            <span class="tag">Predictive Diagnostics</span>
+                        </div>
+                        <a href="papers/Power_Grid_Lambda_G.pdf" class="btn" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            View PDF
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Tokamak_Lambda_POC_thumbnail.png" alt="Tokamak Lambda POC" class="card-thumbnail" loading="lazy">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-icon fusion">🔥</div>
+                            <div>
+                                <h3 class="card-title">Tokamak Plasma Diagnostics</h3>
+                                <p class="card-meta">Fusion Energy / Plasma Physics</p>
+                            </div>
+                        </div>
+                        <p class="card-description">
+                            Multi-scale structured diagnostic family for early warning of pedestal events (edge localized modes, large pedestal collapses) in tokamak plasmas. Combines derivative-free noncommutativity ladder, projector-drift signals, adiabatic-mixing parameters, and energy-conversion proxies. Provides reproducible pipeline for predictive and interpretive value in specified regimes with explicit experimental embodiments, enabling safer fusion reactor operation.
+                        </p>
+                        <div class="tags">
+                            <span class="tag fusion">Fusion Energy</span>
+                            <span class="tag">Plasma Physics</span>
+                            <span class="tag">Predictive Diagnostics</span>
+                        </div>
+                        <a href="papers/Tokamak_Lambda_POC.pdf" class="btn" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            View PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Technical Documentation</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon math">🔬</div>
+                        <div>
+                            <h3 class="card-title">GASpec Validation Framework</h3>
+                            <p class="card-meta">Technical Specification</p>
+                        </div>
+                    </div>
+                    <p class="card-description">
+                        Spectral validation framework for testing and verifying geometric algebra software implementations against analytical ground truth.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Software Testing</span>
+                        <span class="tag">Validation</span>
+                    </div>
+                    <a href="docs/GASpec_Technical_Framework.docx" class="btn" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                        View Document
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Ricky J. Mathews. All rights reserved.</p>
+            <p style="margin-top: 0.5rem;">
+                <a href="https://github.com/kantrarian" style="color: var(--primary);">GitHub</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
