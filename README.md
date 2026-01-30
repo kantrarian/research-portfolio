@@ -71,7 +71,7 @@ Novel predictive diagnostics using non-commutativity analysis of dynamical gener
 ## Related Projects
 
 - [qsurf / getQore](https://getqore.ai/) - Quantum Error Correction validation platform (Patent Pending). Hardware-validated QEC with R² = 0.9999 on Google Willow quantum processors.
-- [GeoSpec](https://github.com/kantrarian/geospec) - Seismic fault prediction system
+- [GeoSpec](https://kantrarian.github.io/geospec/) - Seismic fault prediction system
 
 ---
 
