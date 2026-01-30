@@ -65,14 +65,12 @@ Novel predictive diagnostics using non-commutativity analysis of dynamical gener
 - **Fusion Energy**: Early warning system for plasma instabilities enabling safer reactor operation
 - **Financial Markets**: 100% detection rate for major market transitions with 14-90 day lead times
 - **Materials Science**: Hierarchical FE² speedup with zero false negatives in crystal plasticity modeling
-- **Robotics**: Predictive pose/sensor fault detection via QTrace platform
 
 ---
 
 ## Related Projects
 
-- [QBits](https://github.com/kantrarian/qbits) - Quantum Error Correction verification framework (Patent Pending)
-- [QTrace](https://github.com/kantrarian/qtrace) - Robotics validation platform
+- [qsurf / getQore](https://getqore.ai/) - Quantum Error Correction validation platform (Patent Pending). Hardware-validated QEC with R² = 0.9999 on Google Willow quantum processors.
 - [GeoSpec](https://github.com/kantrarian/geospec) - Seismic fault prediction system
 
 ---
