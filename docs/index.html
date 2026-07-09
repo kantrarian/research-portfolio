@@ -284,7 +284,11 @@
                     <div class="stat-label">Technical Papers</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-value">4</div>
+                    <div class="stat-value">1</div>
+                    <div class="stat-label">Live Monitoring System</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">5</div>
                     <div class="stat-label">Application Domains</div>
                 </div>
             </div>
@@ -390,7 +394,7 @@
                             </div>
                         </div>
                         <p class="card-description">
-                            Quantum-state-aware schema for multidimensional data analysis using Clifford algebra as foundational data architecture. Proposes multivector fact tables where algebraic structure serves as schema, enabling geometry-aware data systems. Introduces Lie-Jordan decomposition for separating incompatibility from alignment, with applications to spatial data systems and quantum data representations.
+                            Quantum-state-aware schema for multidimensional data analysis using Clifford algebra as foundational data architecture. Proposes multivector fact tables where algebraic structure serves as schema, enabling geometry-aware data systems. Introduces Lie-Jordan decomposition for separating incompatibility from alignment, with applications to spatial data systems and quantum data representations. <em>Erratum (July 2026): the database speedup figures in the current PDF (500&times;&ndash;2,242&times;) are superseded by the author's own fair-baseline control &mdash; a flat schema with identical materialized, indexed invariant columns reproduces the entire advantage, so those figures measure indexing rather than multivector storage. The durable contribution is structure preservation and semantically correct geometric querying; a corrected revision is in preparation.</em>
                         </p>
                         <div class="tags">
                             <span class="tag">Data Architecture</span>
@@ -417,7 +421,7 @@
                             </div>
                         </div>
                         <p class="card-description">
-                            Two-signal framework for market regime detection combining commutator-based rotation detection with correlation synchronization. Detects institutional repositioning preceding major market transitions through non-commutativity analysis of factor covariance dynamics. Achieves 100% detection rate across 33 major market events (2000-2024) with 14-90 day lead times. Extended with game-theoretic layer incorporating Von Neumann-Nash equilibrium concepts.
+                            Two-signal framework for market regime detection combining commutator-based rotation detection with correlation synchronization. Detects institutional repositioning preceding major market transitions through non-commutativity analysis of factor covariance dynamics. On the current expanded 47-event ledger (2000&ndash;2024), the canonical detection rule identifies 38/47 major market events (80.9%); the original 33-event validation achieved 100% with 14&ndash;90 day lead times and was superseded as the event ledger grew (methodology unchanged &mdash; both figures retained per the project's supersession discipline). Strongest on institutional-rotation events (60&ndash;90 day mean lead times). Extended with game-theoretic layer incorporating Von Neumann-Nash equilibrium concepts.
                         </p>
                         <div class="tags">
                             <span class="tag">Financial Markets</span>
@@ -444,7 +448,7 @@
                             </div>
                         </div>
                         <p class="card-description">
-                            Predictive grid stress diagnostics via non-commutativity of power flow Jacobians. Two-channel architecture detects localized stress pockets (60%+ sensitivity advantage over global metrics) and topology discontinuities with 13.8s lead time before cascade collapse. Distinguishes stress localization from margin preservation, enabling targeted emergency response and preventive maintenance to prevent blackouts.
+                            Predictive grid stress diagnostics via non-commutativity of power flow Jacobians. Two-channel architecture (trend + shock) detects localized stress pockets (45&times; sensitivity advantage over eigenvalue metrics on meshed networks) and topology discontinuities with +13.8 s lead time before cascade collapse. Validated on IEEE 33/118/300-bus systems across two inertia configurations (full synchronous, 40% renewable; 1.4&ndash;2.4&times; low-inertia amplification). 3.1&ndash;4.4&times; faster than eigenvalue-based monitoring with 7&times; lower false alarm rate and zero nuisance alarms under a 3-sample persistence filter; N&minus;k cascade screening achieves Spearman &rho; &gt; 0.99. Distinguishes stress localization from margin preservation, enabling targeted emergency response.
                         </p>
                         <div class="tags">
                             <span class="tag grid">Critical Infrastructure</span>
@@ -544,6 +548,37 @@
         </section>
 
         <section class="section">
+            <h2 class="section-title">Live Systems</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-icon math">🌍</div>
+                            <div>
+                                <h3 class="card-title">GeoSpec: Earthquake Precursor Detection</h3>
+                                <p class="card-meta">Seismology / Geodesy &mdash; Live Monitoring</p>
+                            </div>
+                        </div>
+                        <p class="card-description">
+                            &Lambda;<sub>geo</sub> = &Vert;[E, &#278;]&Vert;<sub>F</sub> strain-rate commutator diagnostic for earthquake precursors, deployed as a live monitoring system. Three-method ensemble (v2.0): GPS strain eigenframe rotation (&Lambda;<sub>geo</sub>), fault-segment correlation, and seismic THD. Retrospective validation: 4/4 major events detected (Ridgecrest M7.1, Turkey M7.8, T&#333;hoku M9.0, Chile M8.8) with 7&ndash;14 day CRITICAL-level lead times (16/16 validation tests). Automated daily monitoring of 14 regions with a public dashboard; stress-release drop detector added in v1.6.0.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Seismology</span>
+                            <span class="tag">Live Monitoring</span>
+                            <span class="tag">Predictive Diagnostics</span>
+                        </div>
+                        <a href="https://kantrarian.github.io/geospec/" class="btn" target="_blank">
+                            Live Dashboard
+                        </a>
+                        <a href="https://github.com/kantrarian/geospec" class="btn" target="_blank" style="margin-left: 0.5rem;">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
             <h2 class="section-title">Technical Documentation</h2>
             <div class="grid">
                 <div class="card">
@@ -572,7 +607,7 @@
         </section>
 
         <footer>
-            <p>&copy; 2025 Ricky J. Mathews. All rights reserved.</p>
+            <p>&copy; 2025&ndash;2026 Ricky J. Mathews. All rights reserved.</p>
             <p style="margin-top: 0.5rem;">
                 <a href="https://github.com/kantrarian" style="color: var(--primary);">GitHub</a>
             </p>
