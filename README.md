@@ -1,88 +1,70 @@
 # Research Portfolio
 
-**Ricky J. Mathews**  
-[mail.rjmathews@gmail.com](mailto:mail.rjmathews@gmail.com) | ORCID: [0009-0003-8975-1352](https://orcid.org/0009-0003-8975-1352)
+**Ricky J. Mathews**
+[mail.rjmathews@gmail.com](mailto:mail.rjmathews@gmail.com) |
+ORCID [0009-0003-8975-1352](https://orcid.org/0009-0003-8975-1352)
 
----
+Research in geometric algebra, operator diagnostics, quantum control and
+scientific evaluation. Mathematical identities, software tests, synthetic
+experiments and prospective predictive evidence are distinct evidence classes.
+Noncommutativity alone does not establish an early-warning capability.
 
-## Overview
+[Portfolio dashboard](https://kantrarian.github.io/research-portfolio/) |
+[October 27 technical corrections](corrections/2026-10-27/README.md)
 
-This repository contains my research portfolio spanning geometric algebra, quantum computing, and applied mathematics. The work demonstrates novel applications of spectral methods and Clifford algebra across multiple domains including quantum error correction, power grid analysis, fusion plasma physics, and financial market regime detection. These innovations provide predictive diagnostics and control frameworks that enable early intervention in critical systems.
+## Historical Patent Documents
 
-**[View the Portfolio Dashboard](https://kantrarian.github.io/research-portfolio/)**
+These PDFs are preserved as historical documents, not silently amended.
+Technical corrections do not determine filing status, legal scope or validity.
 
----
+| Document | Current technical scope |
+| --- | --- |
+| [BCH provisional](patents/BCH_Provisional_Patent.pdf) | Adaptive finite-deformation integration proposal. The printed strain update and universal error/speed assurances require correction. [State-preserving derivation and tests](corrections/2026-10-27/01_BCH_STATE_UPDATE.md) give a frozen-generator reference, including plastic spin and retained rotation. Historical timings do not validate this corrected implementation. |
+| [Umbrella provisional](patents/Umbrella_Provisional_Patent.pdf) | Proposed cross-domain noncommutativity diagnostics. Comparisons require compatible carriers, frames, metrics, units and index maps; predictive value must be established per domain. Representation independence and advance warning are not implied by the commutator alone. |
 
-## Contents
+## Research Papers
 
-### Provisional Patents
+| Paper | Current evidence and limitations |
+| --- | --- |
+| [Quantum commutator telemetry, v3](papers/Quantum_Dynamics_Spectral_Curvature_v3.pdf) | Exact constant-coupling two-level identity; finite-pulse transition predictions are model-dependent. Corrected Fourier inequality and a nonlinear counterexample. Archived 90-run observations remain scoped to their schedules, not a universal leakage law. [Correction](corrections/2026-10-27/02_QUANTUM_SCOPE.md); [source and simulations](https://github.com/kantrarian/lambda-t-control). |
+| [Clifford Fact Tables](papers/Clifford_Fact_Table.pdf) | Grade-structured storage and geometric querying proposal. Historical 500x-2242x database speed figures do not isolate a multivector-storage advantage: a flat baseline with the same materialized indexed invariants reproduces that advantage. The old PDF remains an archive, not current performance evidence. |
+| [Lambda-F, v2 historical correction edition](papers/Lambda_F_Functional_v2.pdf) | Market-structure diagnostics, not established institutional-flow attribution. Historical detection-rate headlines remain withdrawn. Signal-based exclusions also invalidate the paper's evaluation population, independently of missing artifacts. A live episode scorecard cannot restore event recall. [Population and method correction](corrections/2026-10-27/03_FINANCE_POPULATION.md); [dashboard repository](https://github.com/vonlambda/lambda-f-dashboard). |
+| [Power Grid Lambda-G, historical public draft](papers/Power_Grid_Lambda_G.pdf) | Synthetic grid diagnostic study. This archived revision is not a current evidence package; its old cascade lead, localization, runtime and false-alarm headlines are not endorsed here. A replacement needs a release-cleared paper and matching artifacts. No private successor manuscript is published by this update. |
+| [QUBO Sensor Placement, historical draft](papers/QUBO_Sensor_Placement.pdf) | Study of placement-objective alignment. [Corrected objective definitions](corrections/2026-10-27/04_QUBO_OBJECTIVES.md) resolve signs, pair counting, penalty verification, noisy Gaussian information and Hadamard scaling. Small-fixture checks do not reproduce the archived network/QAOA results; the old quantitative headlines are not promoted as verified. |
+| [Spherical Codes and k-NN Search](papers/Spherical_Codes_KNN_Connection.pdf) | Packing/covering and regularized codebook study. Original experiment code was lost. [Independent reproduction](https://github.com/kantrarian/spherical-codes-vq) is a different evidence record, with its own MSE tradeoff and method differences; it does not establish every original headline. |
+| [Tokamak Lambda POC](papers/Tokamak_Lambda_POC.pdf) | Proposed structured diagnostic family with [synthetic implementation](https://github.com/kantrarian/tokamak-lambda). No experimental disruption-prediction or reactor-safety claim is made. Normalization and projector choices require explicit structural checks. |
 
-| Document | Domain | Description |
-|----------|--------|-------------|
-| [BCH Provisional Patent](patents/BCH_Provisional_Patent.pdf) | Materials Science / Quantum Computing | Hybrid adaptive Baker-Campbell-Hausdorff solver using kinematic curvature diagnostic for finite-deformation crystal plasticity. Achieves hierarchical FE² speedup with zero false negatives through geometric proof of curvature connection and universal scaling law. |
-| [Umbrella Patent](patents/Umbrella_Provisional_Patent.pdf) | Multi-Domain Predictive Diagnostics | Comprehensive framework for predictive diagnostics using non-commutativity of dynamical generators. Representation-agnostic method applicable across quantum error correction, robotics pose/sensor fault prediction, seismic stress-regime detection, and adaptive mesh refinement in CFD. Provides first-principles, computationally efficient predictive alarms with sufficient lead time for pre-emptive action. |
+## Systems and Technical Documentation
 
-### Research Papers
+- [GeoSpec](https://geospec.getqore.ai/) ([repository](https://github.com/kantrarian/geospec)):
+  observational research and retained-measurement rule evaluation. Retrospective
+  associations, scenario clocks and software fixtures are not evidence of
+  prospective earthquake warnings. Earlier 4/4 and 7-14-day headlines are not
+  carried forward as validated forecast performance. Hosted access may require
+  authorization; this reconciliation is not a hosted acceptance test.
+- [GASpec reference](docs/GASpec_Technical_Framework.docx): historical spectral
+  software-validation specification, not a blanket proof of every proposed
+  geometric-algebra implementation. Observable and time-model assumptions matter.
+- [qsurf / getQore](https://getqore.ai/): related quantum-computing work, with its
+  own evidence and claim review. This portfolio reconciliation does not certify
+  hardware efficacy or patent scope there.
 
-| Paper | Domain | Description |
-|-------|--------|-------------|
-| [Quantum Dynamics Spectral Curvature](papers/Quantum_Dynamics_Spectral_Curvature.pdf) | Quantum Control | Predictive geometric control framework preventing non-adiabatic transitions and leakage in electrically controlled qubits. Introduces spectral curvature functional Λ(t) = ∥[B(t), Ḃ(t)]∥ that provides pointwise control law: minimizing peak curvature at avoided crossings exponentially suppresses leakage. Enables predictive feedback control without requiring counter-diabatic fields or full Hamiltonian inversion. *Revised July 2026 (v2): time-dependent Schrödinger simulations added (90 LZSM sweep runs confirming the pointwise law, with matched-time curvature-flattened waveforms cutting measured leakage 8x-5,713x), and the Landau-Zener exponent normalization corrected throughout — the simulations themselves identified a factor-of-two error in the originally printed constant. Simulation code + telemetry: [kantrarian/lambda-t-control](https://github.com/kantrarian/lambda-t-control).* |
-| [Clifford Fact Tables](papers/Clifford_Fact_Table.pdf) | Data Architecture / Mathematics | Quantum-state-aware schema for multidimensional data analysis using Clifford algebra as foundational data architecture. Proposes multivector fact tables where algebraic structure serves as schema, enabling geometry-aware data systems. Introduces Lie-Jordan decomposition for separating incompatibility from alignment, with applications to spatial data systems and quantum data representations. *Erratum (July 2026): the database speedup figures in the current PDF (500x-2,242x) are superseded by the author's own fair-baseline control — a flat schema with identical materialized, indexed invariant columns reproduces the entire advantage, so those figures measure indexing rather than multivector storage. The durable contribution is structure preservation and semantically correct geometric querying; a corrected revision is in preparation.* |
-| [Lambda-F Functional (v2, correction notice)](papers/Lambda_F_Functional_v2.pdf) | Financial Markets / Spectral Analysis | Two-signal framework for market regime detection combining commutator-based rotation detection with correlation synchronization. Detects institutional repositioning preceding major market transitions through non-commutativity analysis of factor covariance dynamics. **Correction (2026-07-28):** previously quoted detection-rate headlines (100% on a 33-event validation; 80.9% = 38/47 on an expanded 47-event ledger) are withdrawn — the event ledgers behind them were never committed to the project repository, so the figures cannot be re-derived from any committed artifact. Withdrawn, not restated; the authoritative performance record is the live censoring-aware episode scorecard in the dashboard. Extended with game-theoretic layer incorporating Von Neumann-Nash equilibrium concepts. Live dashboard: [vonlambda/lambda-f-dashboard](https://github.com/vonlambda/lambda-f-dashboard). |
-| [Power Grid Lambda-G](papers/Power_Grid_Lambda_G.pdf) | Power Systems / Critical Infrastructure | Predictive grid stress diagnostics via non-commutativity of power flow Jacobians. Two-channel architecture (trend + shock) detects localized stress pockets (45x sensitivity advantage over eigenvalue metrics on meshed networks) and topology discontinuities with +13.8s lead time before cascade collapse. Validated on IEEE 33/118/300-bus systems across two inertia configurations (full synchronous, 40% renewable). 3.1-4.4x faster than eigenvalue-based monitoring, 7x lower false alarm rate, zero nuisance alarms with 3-sample persistence filter. N-k cascade screening achieves Spearman rho > 0.99. Distinguishes stress localization (diagnostic) from margin preservation (control). |
-| [QUBO Sensor Placement](papers/QUBO_Sensor_Placement.pdf) | Power Systems / Quantum Optimization | Stress-information duality in QUBO formulations for power grid sensor placement. Demonstrates that QUBO formulation quality dominates solver quality: dispersion-dominant objectives produce placements worse than 99% of random alternatives on radial networks due to stress-information duality (MI-distance anti-correlation r = -0.37 proxy, -0.45 cascade). Discovers a sharp alpha phase transition at ~0.8 where hub accuracy collapses from 100% to 20%. Validated end-to-end: four QUBO objectives across classical solvers (brute-force, SA, MILP, greedy) and QAOA simulator (p=1-4, 20-qubit reduced problem, 9/10 multi-start COBYLA success). Cross-topology confirmation on IEEE 57-bus meshed system (no phase transition, 100% hub accuracy at all alphas). Corrected Hadamard test assessment with honest quantum roadmap. |
-| [Spherical Codes and k-NN Search](papers/Spherical_Codes_KNN_Connection.pdf) | Machine Learning / Vector Quantization | Theoretical connection between spherical code optimization (packing) and codebook design for approximate nearest neighbor search (covering). Proposes gap-based regularization for vector quantization achieving +10-13% better separation with only +3% MSE cost. Validates that kissing number methodology transfers successfully to codebook learning when using achievable targets and proper regularization strength. *Reproduction study (July 2026): the original experiment code was lost; an independent pre-registered re-implementation is at [kantrarian/spherical-codes-vq](https://github.com/kantrarian/spherical-codes-vq) — the headline separation gain reproduces almost exactly (+10.9-11.9%); see the repo's comparison table for where the re-run diverges (MSE cost, init-iteration mechanism).* |
-| [Tokamak Lambda POC](papers/Tokamak_Lambda_POC.pdf) | Fusion Energy / Plasma Physics | Multi-scale structured diagnostic family for early warning of pedestal events (edge localized modes, large pedestal collapses) in tokamak plasmas. Combines derivative-free noncommutativity ladder, projector-drift signals, adiabatic-mixing parameters, and energy-conversion proxies. Provides reproducible pipeline for predictive and interpretive value in specified regimes with explicit experimental embodiments. *Reference implementation (July 2026): [kantrarian/tokamak-lambda](https://github.com/kantrarian/tokamak-lambda) — the paper's diagnostic family implemented end-to-end with structural-telemetry instrumentation and a synthetic mechanics demo (no experimental validation claim).* |
+## Reading the Evidence
 
-### Live Systems
+The common contribution is structure-aware measurement and explicit evaluation,
+not a universal prediction law. A commutator norm discards direction; matrix
+eigenvalues do not preserve eigenframes; a Gram matrix loses some operator
+information; and moving frames or changing index sets need declared transports.
+For predictive claims, require an independent outcome population, realistic
+availability clocks, simple baselines, held-out evaluation, exposure and
+uncertainty. Passing code tests does not establish scientific or commercial
+readiness.
 
-| System | Domain | Description |
-|--------|--------|-------------|
-| [GeoSpec](https://kantrarian.github.io/geospec/) ([GitHub](https://github.com/kantrarian/geospec)) | Seismology / Geodesy | Λ_geo = ‖[E, Ė]‖_F strain-rate commutator diagnostic for earthquake precursors, deployed as a live monitoring system. Three-method ensemble (v2.0): GPS strain eigenframe rotation, fault-segment correlation, and seismic THD. Retrospective validation: 4/4 major events detected (Ridgecrest M7.1, Turkey M7.8, Tōhoku M9.0, Chile M8.8) with 7-14 day CRITICAL-level lead times (16/16 validation tests). Automated daily monitoring of 14 regions with a public dashboard; stress-release drop detector added in v1.6.0. |
+Historical PDFs remain available for provenance. Read the linked corrections
+before quoting their formulas or results. The quantum v3 is a new version;
+other full-manuscript replacements and empirical reruns remain separate work.
 
-### Technical Documentation
+## Rights
 
-| Document | Description |
-|----------|-------------|
-| [GASpec Framework](docs/GASpec_Technical_Framework.docx) | Spectral validation framework for testing and verifying geometric algebra software implementations against analytical ground truth. Enables rigorous validation of GA computations across quantum, robotics, and seismic analysis domains. *Note: the linked document is the October 2025 reference implementation (code listing); a standalone repository with the organized test suite is planned.* |
-
----
-
-## Research Themes
-
-### Geometric Algebra (Clifford Algebra)
-
-Coordinate-free mathematical framework enabling unified treatment of rotations, reflections, and projections across dimensions. Applied to:
-- Quantum state representation and error correction
-- Robotics orientation validation
-- Seismic fault slip vector analysis
-- Data architecture and schema design
-
-### Spectral Functionals (λ Family)
-
-Novel predictive diagnostics using non-commutativity analysis of dynamical generators:
-- **λ(t)**: Quantum control functional preventing leakage in qubit operations
-- **λ_f**: Market regime detection via factor rotation analysis
-- **λ_G**: Power grid stress diagnostics with cascade prediction
-- **Λ**: General non-commutativity functional for predictive diagnostics
-
-### Applications & Impact
-
-- **Quantum Computing**: Predictive control preventing qubit leakage, O(n log n) QEC verification vs O(n²) traditional methods
-- **Power Systems**: QUBO-based optimal sensor placement with stress-information duality discovery; formulation-to-validation pipeline connecting quantum optimization to cascade detection metrics; QAOA simulator validation on 20-qubit subproblem (exact optimum at all depths p=1-4)
-- **Fusion Energy**: Early warning system for plasma instabilities enabling safer reactor operation
-- **Financial Markets**: prior detection-rate headlines (100% / 33-event; 80.9% = 38/47) withdrawn 2026-07-28 — underlying ledgers never committed, figures not re-derivable from any committed artifact; the dashboard's live censoring-aware scorecard is the authoritative record
-- **Materials Science**: Hierarchical FE² speedup with zero false negatives in crystal plasticity modeling
-
----
-
-## Related Projects
-
-- [qsurf / getQore](https://getqore.ai/) - Quantum Error Correction validation platform (Patent Pending). Hardware-validated QEC with R² = 0.9999 on Google Willow quantum processors.
-- [GeoSpec](https://kantrarian.github.io/geospec/) - Seismic fault prediction system
-
----
-
-## License
-
-All documents in this repository are Copyright 2025-2026 Ricky J. Mathews. Patent applications are pending. Please contact for licensing inquiries.
+Copyright 2025-2026 Ricky J. Mathews. Contact the author for licensing.
+Repository presence is not a legal opinion about pending or granted rights.

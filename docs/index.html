@@ -25,6 +25,11 @@
             box-sizing: border-box;
         }
 
+        .section a:not(.btn) {
+            color: #93c5fd;
+            text-underline-offset: 0.15em;
+        }
+
         body {
             font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
             background: var(--bg);
@@ -267,7 +272,7 @@
     <div class="container">
         <header>
             <h1>Ricky J. Mathews</h1>
-            <p class="subtitle">Research Portfolio: Predictive Diagnostics for Critical Systems</p>
+            <p class="subtitle">Research Portfolio: Structural Diagnostics and Scientific Evaluation</p>
             <p style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.95rem;">Geometric Algebra, Quantum Computing & Applied Mathematics</p>
             <p class="contact">
                 <a href="mailto:mail.rjmathews@gmail.com">mail.rjmathews@gmail.com</a> |
@@ -280,7 +285,7 @@
                     <div class="stat-label">Provisional Patents</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-value">6</div>
+                    <div class="stat-value">7</div>
                     <div class="stat-label">Technical Papers</div>
                 </div>
                 <div class="stat">
@@ -293,6 +298,11 @@
                 </div>
             </div>
         </header>
+
+        <section class="section" aria-label="Evidence status">
+            <h2 class="section-title">Technical Corrections: October 27, 2026</h2>
+            <p>Mathematical identities, software checks, simulations and predictive evidence are different claims. Read the <a href="corrections/2026-10-27/index.html">correction record</a> before citing historical PDFs. This update is not publication acceptance, patent clearance or a new confirmatory study.</p>
+        </section>
 
         <section class="section">
             <h2 class="section-title">Provisional Patents</h2>
@@ -308,7 +318,7 @@
                             </div>
                         </div>
                         <p class="card-description">
-                            Hybrid adaptive Baker-Campbell-Hausdorff solver using kinematic curvature diagnostic for finite-deformation crystal plasticity. Achieves hierarchical FE² speedup with zero false negatives through geometric proof of curvature connection and universal scaling law. Enables predictive diagnostics in materials modeling with multi-purpose diagnostic capabilities.
+                            Adaptive finite-deformation integration proposal. The historical PDF is preserved, but its printed strain update and universal error and speed assurances are not endorsed. The correction retains multiplicative state and elastic rotation, derives the symmetric strain update, and tests plastic-spin cases. Historical timings do not validate the corrected algorithm. <a href="corrections/2026-10-27/01_BCH_STATE_UPDATE.md">Technical correction</a>.
                         </p>
                         <div class="tags">
                             <span class="tag">Materials Science</span>
@@ -335,7 +345,7 @@
                             </div>
                         </div>
                         <p class="card-description">
-                            Comprehensive framework for predictive diagnostics using non-commutativity of dynamical generators. Representation-agnostic method applicable across quantum error correction, robotics pose/sensor fault prediction, seismic stress-regime detection, and adaptive mesh refinement in CFD. Provides first-principles, computationally efficient predictive alarms with sufficient lead time for pre-emptive action in critical systems.
+                            Proposed cross-domain noncommutativity diagnostics. Comparisons require compatible carriers, frames, metrics, units and index maps. Predictive value must be established separately for each application; representation independence and advance warning do not follow from the commutator alone. Historical patent text is preserved, not amended by this technical review.
                         </p>
                         <div class="tags">
                             <span class="tag">Multi-Domain</span>
@@ -357,24 +367,24 @@
             <h2 class="section-title">Research Papers</h2>
             <div class="grid">
                 <div class="card">
-                    <img src="images/Quantum_Dynamics_Spectral_Curvature_thumbnail.png" alt="Quantum Dynamics Spectral Curvature" class="card-thumbnail" loading="lazy">
+                    <img src="images/Quantum_Dynamics_Spectral_Curvature_v3_thumbnail.png" alt="Quantum commutator telemetry, corrected v3" class="card-thumbnail" loading="lazy">
                     <div class="card-content">
                         <div class="card-header">
                             <div class="card-icon quantum">⚛️</div>
                             <div>
-                                <h3 class="card-title">Predictive Geometric Control of Quantum Dynamics</h3>
-                                <p class="card-meta">Quantum Control / Error Prevention</p>
+                                <h3 class="card-title">Spectral Commutator Telemetry for Quantum Control</h3>
+                                <p class="card-meta">Quantum Control / Model Scope</p>
                             </div>
                         </div>
                         <p class="card-description">
-                            Predictive geometric control framework preventing non-adiabatic transitions and leakage in electrically controlled qubits. Introduces spectral curvature functional Λ(t) = ∥[B(t), Ḃ(t)]∥ that provides pointwise control law: minimizing peak curvature at avoided crossings exponentially suppresses leakage. Enables predictive feedback control without requiring counter-diabatic fields or full Hamiltonian inversion. <em>Revised July 2026 (v2): TDSE simulations added &mdash; 90 LZSM sweep runs confirm the pointwise law and matched-time curvature-flattened waveforms cut measured leakage 8&times;&ndash;5,713&times; &mdash; and the Landau&ndash;Zener exponent normalization corrected throughout (the simulations identified a factor-of-two error in the originally printed constant). Simulation code: <a href="https://github.com/kantrarian/lambda-t-control" target="_blank">kantrarian/lambda-t-control</a>.</em>
+                            Exact constant-coupling two-level commutator identity, with model-dependent transition predictions. V3 corrects the Fourier inequality, distinguishes crossing value from peak value, and includes a nonlinear counterexample to the universal pointwise law. The archived 90-run observations remain scoped to their schedules, not hardware leakage prevention. <a href="corrections/2026-10-27/02_QUANTUM_SCOPE.md">Technical correction</a>; <a href="https://github.com/kantrarian/lambda-t-control" target="_blank">source and simulations</a>.
                         </p>
                         <div class="tags">
                             <span class="tag quantum">Quantum Control</span>
                             <span class="tag">Predictive Diagnostics</span>
                             <span class="tag">Spectral Methods</span>
                         </div>
-                        <a href="papers/Quantum_Dynamics_Spectral_Curvature.pdf" class="btn" target="_blank">
+                        <a href="papers/Quantum_Dynamics_Spectral_Curvature_v3.pdf" class="btn" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                             </svg>
@@ -421,7 +431,7 @@
                             </div>
                         </div>
                         <p class="card-description">
-                            Two-signal framework for market regime detection combining commutator-based rotation detection with correlation synchronization. Detects institutional repositioning through non-commutativity analysis of factor covariance dynamics. <em>Correction (2026-07-28):</em> previously quoted detection-rate headlines (100% on a 33-event validation; 80.9% = 38/47 on an expanded 47-event ledger) are withdrawn &mdash; on audit, the event ledgers behind them were never committed to the project repository, so the figures cannot be re-derived from any committed artifact. Withdrawn, not restated; see the dashboard's correction notice. The authoritative performance record is the live censoring-aware episode scorecard in vonlambda/lambda-f-dashboard. Extended with game-theoretic layer incorporating Von Neumann-Nash equilibrium concepts.
+                            Market-structure diagnostics, not established institutional-flow attribution. Historical detection-rate headlines remain withdrawn. The paper's signal-based event exclusions also invalidate its evaluation population; a live episode scorecard cannot supply independent event recall. The correction separates misses, missing coverage, channels, clocks and model versions, and withdraws the unsupported reflexivity-ablation interpretation. <a href="corrections/2026-10-27/03_FINANCE_POPULATION.md">Population correction</a>. The linked v2 PDF remains a historical edition.
                         </p>
                         <div class="tags">
                             <span class="tag">Financial Markets</span>
@@ -443,12 +453,12 @@
                         <div class="card-header">
                             <div class="card-icon grid">⚡</div>
                             <div>
-                                <h3 class="card-title">Predictive Grid Stress Diagnostics</h3>
+                                <h3 class="card-title">Grid Stress Diagnostics: Historical Draft</h3>
                                 <p class="card-meta">Critical Infrastructure / Power Systems</p>
                             </div>
                         </div>
                         <p class="card-description">
-                            Predictive grid stress diagnostics via non-commutativity of power flow Jacobians. Two-channel architecture (trend + shock) detects localized stress pockets (45&times; sensitivity advantage over eigenvalue metrics on meshed networks) and topology discontinuities with +13.8 s lead time before cascade collapse. Validated on IEEE 33/118/300-bus systems across two inertia configurations (full synchronous, 40% renewable; 1.4&ndash;2.4&times; low-inertia amplification). 3.1&ndash;4.4&times; faster than eigenvalue-based monitoring with 7&times; lower false alarm rate and zero nuisance alarms under a 3-sample persistence filter; N&minus;k cascade screening achieves Spearman &rho; &gt; 0.99. Distinguishes stress localization from margin preservation, enabling targeted emergency response.
+                            Synthetic grid diagnostic study using power-flow Jacobian changes. The linked public revision is historical, not a current evidence package; its old cascade-lead, localization, speed and false-alarm headlines are not endorsed here. A replacement needs a release-cleared paper and matching artifacts. No private successor manuscript is disclosed by this update.
                         </p>
                         <div class="tags">
                             <span class="tag grid">Critical Infrastructure</span>
@@ -475,7 +485,7 @@
                             </div>
                         </div>
                         <p class="card-description">
-                            Formulation-to-validation pipeline for QUBO-based sensor placement on power grid stress monitoring. Discovers stress-information duality: dispersion-dominant QUBO objectives produce placements worse than 99% of random alternatives on radial networks due to MI-distance anti-correlation (r = -0.37 proxy, -0.45 cascade). Sharp alpha phase transition at ~0.8. QAOA validated on 20-qubit subproblem (exact optimum, p=1-4). Cross-topology confirmation on IEEE 57-bus meshed system. Corrected Hadamard test with honest quantum roadmap.
+                            Study of placement-objective alignment. Corrected definitions distinguish coverage, minimax, dispersion and pairwise information surrogates, with explicit QUBO/Ising conventions, penalty sufficiency, noisy Gaussian information and fourth-order Hadamard scaling. Small-fixture tests do not reproduce the historical network and QAOA tables. <a href="corrections/2026-10-27/04_QUBO_OBJECTIVES.md">Objective correction</a>; the linked paper remains an archive.
                         </p>
                         <div class="tags">
                             <span class="tag grid">Quantum Optimization</span>
@@ -502,7 +512,7 @@
                             </div>
                         </div>
                         <p class="card-description">
-                            Theoretical connection between spherical code optimization (packing) and codebook design for approximate nearest neighbor search (covering). Proposes gap-based regularization for vector quantization achieving +10-13% better separation with only +3% MSE cost. Validates that kissing number methodology transfers successfully to codebook learning when using achievable targets and proper regularization strength. <em>Reproduction study (July 2026): the original experiment code was lost; an independent pre-registered re-implementation is at <a href="https://github.com/kantrarian/spherical-codes-vq" target="_blank">kantrarian/spherical-codes-vq</a> &mdash; the headline separation gain reproduces almost exactly (+10.9&ndash;11.9%); see the repo's comparison table for where the re-run diverges.</em>
+                            Packing/covering and regularized codebook study. The original experiment code was lost. An <a href="https://github.com/kantrarian/spherical-codes-vq" target="_blank">independent reimplementation</a> is a separate evidence record with its own MSE tradeoff and method differences; it does not establish every headline in the historical PDF.
                         </p>
                         <div class="tags">
                             <span class="tag">Machine Learning</span>
@@ -529,7 +539,7 @@
                             </div>
                         </div>
                         <p class="card-description">
-                            Multi-scale structured diagnostic family for early warning of pedestal events (edge localized modes, large pedestal collapses) in tokamak plasmas. Combines derivative-free noncommutativity ladder, projector-drift signals, adiabatic-mixing parameters, and energy-conversion proxies. Provides reproducible pipeline for predictive and interpretive value in specified regimes with explicit experimental embodiments, enabling safer fusion reactor operation. <em>Reference implementation (July 2026): <a href="https://github.com/kantrarian/tokamak-lambda" target="_blank">kantrarian/tokamak-lambda</a> &mdash; the diagnostic family implemented end-to-end with structural-telemetry instrumentation and a synthetic mechanics demo (no experimental validation claim).</em>
+                            Proposed structured diagnostic family with a <a href="https://github.com/kantrarian/tokamak-lambda" target="_blank">synthetic reference implementation</a>. No experimental disruption-prediction or reactor-safety claim is made. Normalization, projector choice and frame assumptions require explicit structural checks before interpreting the signals.
                         </p>
                         <div class="tags">
                             <span class="tag fusion">Fusion Energy</span>
@@ -555,19 +565,19 @@
                         <div class="card-header">
                             <div class="card-icon math">🌍</div>
                             <div>
-                                <h3 class="card-title">GeoSpec: Earthquake Precursor Detection</h3>
+                                <h3 class="card-title">GeoSpec: Observational Research</h3>
                                 <p class="card-meta">Seismology / Geodesy &mdash; Live Monitoring</p>
                             </div>
                         </div>
                         <p class="card-description">
-                            &Lambda;<sub>geo</sub> = &Vert;[E, &#278;]&Vert;<sub>F</sub> strain-rate commutator diagnostic for earthquake precursors, deployed as a live monitoring system. Three-method ensemble (v2.0): GPS strain eigenframe rotation (&Lambda;<sub>geo</sub>), fault-segment correlation, and seismic THD. Retrospective validation: 4/4 major events detected (Ridgecrest M7.1, Turkey M7.8, T&#333;hoku M9.0, Chile M8.8) with 7&ndash;14 day CRITICAL-level lead times (16/16 validation tests). Automated daily monitoring of 14 regions with a public dashboard; stress-release drop detector added in v1.6.0.
+                            Observational research and retained-measurement rule evaluation. Retrospective associations, hypothetical latency scenarios and software fixtures are not evidence of prospective earthquake warnings. Earlier 4/4 and 7-14-day headlines are not carried forward as validated forecast performance. Hosted access may require authorization; this reconciliation is not a hosted acceptance test.
                         </p>
                         <div class="tags">
                             <span class="tag">Seismology</span>
                             <span class="tag">Live Monitoring</span>
                             <span class="tag">Predictive Diagnostics</span>
                         </div>
-                        <a href="https://kantrarian.github.io/geospec/" class="btn" target="_blank">
+                        <a href="https://geospec.getqore.ai/" class="btn" target="_blank">
                             Live Dashboard
                         </a>
                         <a href="https://github.com/kantrarian/geospec" class="btn" target="_blank" style="margin-left: 0.5rem;">
